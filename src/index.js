@@ -1,3 +1,8 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
+  let zerosCount = 0;
+  while (number) {
+    number = (number / 5) | 0;
+    zerosCount += number;
+  }
+  return zerosCount
 }
